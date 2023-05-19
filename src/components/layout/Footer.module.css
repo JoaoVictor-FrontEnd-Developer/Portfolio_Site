@@ -1,0 +1,20 @@
+.footer{
+    background-color: #073D5B;
+    padding: 2em;
+}
+
+.footer p{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+}
+
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.email{
+    margin-right: 8px;
+}
