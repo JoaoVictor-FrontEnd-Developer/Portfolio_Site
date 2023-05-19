@@ -20,7 +20,7 @@ function App() {
   return (
     <Router>
       <NavBar onHandleClick={click}/>
-      <MenuPhone onHandleClick={click} menuVisible={menuVisible ? "" : "visivel"} />
+      <MenuPhone onHandleClick={click} menuVisible={!menuVisible ? "" : "visivel"} />
       
       <Routes>
           <Route exact path="/" element={<Home/>}/>
