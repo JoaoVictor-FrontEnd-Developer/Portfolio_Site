@@ -25,7 +25,7 @@ function Home() {
                         <div className={styles.buttons}>
                             <a href='https://www.linkedin.com/in/jo%C3%A3o-victor-632a1021a/' target='_blank'><FaLinkedin/> Linkedin</a>
                             <a href='https://github.com/JoaoVictor-FrontEnd-Developer' target='_blank'><FaGithub/> Github</a>
-                            <a href='https://drive.google.com/file/d/144Nn-fpJBHMNzPAUVPwCTBZIGr39x3gy/view?usp=sharing' target='_blank'><FaDownload/> Currículo</a>
+                            <a href='https://drive.google.com/file/d/18j4m2q6T_vWjuZZOllEpVTgZ9_twgNl1/view?usp=sharing' target='_blank'><FaDownload/> Currículo</a>
                         </div>
                     </div>
 
