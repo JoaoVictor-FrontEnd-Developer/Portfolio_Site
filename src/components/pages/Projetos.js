@@ -40,7 +40,7 @@ function Projetos() {
                             catálogo de filmes utilizando ReactJs para construir dinamicamente a estrutura do catálogo 
                             usando manipulação do DOM com base nas informações recebidas da API TMDB.</p><br/>
                             <p>Para criação do carrossel, utilizei a biblioteca SWIPER, que disponibiliza de métodos
-                                com container que nos permite criar carroseis de forma rápida e precisa. Assim como cada
+                                com que nos permite criar carroséis de forma rápida e precisa. Assim como cada
                                 animação está sendo controlada pela biblioteca AOS, que revela cada componente com o scroll
                                 na página.
                             </p><br />
