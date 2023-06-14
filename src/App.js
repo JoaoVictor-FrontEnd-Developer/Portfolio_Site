@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import NavBar from './components/layout/NavBar'
 import Footer from './components/layout/Footer'
@@ -16,6 +16,12 @@ function App() {
   const click = () => {
     setMenuVisible(!menuVisible);
   }
+
+  useEffect(() => {
+    if (menuVisible) document.body.style.overflow = 'hidden';
+    else document.body.style.overflow = '';
+    
+  }, [menuVisible])
 
   return (
     <Router>
