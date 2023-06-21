@@ -1,10 +1,13 @@
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaChevronDown, FaChevronUp} from 'react-icons/fa'
 import styles from './Projetos.module.css'
 import ProjectCard from '../layout/ProjectCard'
+
 import ToDoList from '../../img/ToDoList.png'
 import validationForm from '../../img/validationForm.png'
 import fylo from '../../img/fylo.png'
 import moonFilms from '../../img/moonFilms.png'
+import quiz from '../../img/quiz.png'
+
 import { useState } from 'react'
 
 function Projetos() {
@@ -55,8 +58,28 @@ function Projetos() {
                         site="https://moon-films.vercel.app/"
                         customClass="row_reverse"
                     />
-                    
+
                     <ProjectCard
+                        img={quiz}
+                        titulo="Quiz de Programação"
+                        texto={<><p>Este projeto, é um jogo que contém um banco de perguntas reordenadas ao inciar o jogo, e
+                            a cada questão respondida é gerado uma resposta visual para as respostas corretas, ao final do jogo,
+                            o usuário pode verificar sua pontuação e reiniciar o jogo.
+                        </p><br />
+                            <p> Criado durante estudos de Context API, que tem como
+                            objetivo gerenciar um estado global para a aplicação, com isso, poder acessar
+                            este estado de qualquer componente.
+                            </p></>}
+                        tecnologias={[<FaHtml5/>, <FaCss3Alt/>, <FaJs/>, <FaReact/>]}
+                        repositorio="https://github.com/JoaoVictor-FrontEnd-Developer/quiz-programacao.git"
+                        site="https://quiz-programacao-theta.vercel.app/"
+                    />
+                    
+                    
+
+                    {MoreProjects && (
+                        <>
+                        <ProjectCard
                         img={validationForm}
                         titulo="Validation Form"
                         texto={<p>Projeto desenvolvido como resolução de um desafio do site Front End Mentor. 
@@ -65,9 +88,8 @@ function Projetos() {
                         tecnologias={[<FaHtml5/>, <FaCss3Alt/>, <FaJs/>]}
                         repositorio="https://github.com/JoaoVictor-FrontEnd-Developer/Validation-Form.git"
                         site="https://joaovictor-frontend-developer.github.io/Validation-Form/"
-                    />
+                        />
 
-                    {MoreProjects && (
                         <ProjectCard
                         img={fylo}
                         titulo="Landing Page"
@@ -77,7 +99,9 @@ function Projetos() {
                         repositorio="https://github.com/JoaoVictor-FrontEnd-Developer/projeto-landing-page.git"
                         site="https://joaovictor-frontend-developer.github.io/projeto-landing-page/"
                         customClass="row_reverse"
-                    />
+                            />
+                        
+                        </>
                     )
                     }
 
