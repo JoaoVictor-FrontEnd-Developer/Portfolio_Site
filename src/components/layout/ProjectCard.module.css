@@ -13,7 +13,7 @@
 }
 
 .card_container .imagem{
-    max-width: 40%;
+    max-width: 50%;
     max-height: 40%;
 }
 
@@ -25,7 +25,7 @@
 
 .text_container{
     padding: 1em;
-    max-width: 650px;
+    max-width: 500px;
 }
 
 .text_container h1,p{
@@ -38,7 +38,7 @@
 }
 
 .text_container p{
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 300;
     line-height: 1.5;
 }
@@ -76,11 +76,17 @@
     margin-top: 3em;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1024px){
     .card_container{
         flex-direction: column;
 
     }
+
+    .text_container{
+        padding: 1em;
+        max-width: 100%;
+    }
+    
 
     .card_container .imagem{
         max-width: 100%;
@@ -89,8 +95,6 @@
 }
 
 @media screen and (max-width: 500px){
-
-    
 
     .text_container .buttons a{
         margin-bottom: 10px;

@@ -19,13 +19,13 @@ function Home() {
                             </ul>
                         
                         <div className={styles.text}>
-                            <h1>Olá, me chamo João Victor ;</h1>
-                            <p>Desenvolvedor Front End</p>
+                            <h1>Olá, sou Desenvolvedor Front End ;</h1>
+                            <p>Me chamo João Victor</p>
                         </div>
                         <div className={styles.buttons}>
                             <a href='https://www.linkedin.com/in/jo%C3%A3o-victor-632a1021a/' target='_blank' rel="noreferrer"><FaLinkedin/> Linkedin</a>
                             <a href='https://github.com/JoaoVictor-FrontEnd-Developer' target='_blank' rel="noreferrer"><FaGithub/> Github</a>
-                            <a href='https://drive.google.com/file/d/1R5zxReYHtgw5DlHOKKDqwlWEvQwrhA5w/view?usp=sharing' target='_blank' rel="noreferrer"><FaDownload/> Currículo</a>
+                            <a href='https://drive.google.com/file/d/1Dbe5EQsp2t-_6UE7u-1KUdbNUUST8Dxa/view?usp=sharing' target='_blank' rel="noreferrer"><FaDownload/> Currículo</a>
                         </div>
                     </div>
 
