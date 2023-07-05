@@ -6,6 +6,7 @@
     padding: 20px;
     background-color: #073D5B;
     border-radius: 20px;
+    
 }
 
 .row_reverse{
@@ -46,6 +47,7 @@
 .text_container ul{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .text_container ul>li{
@@ -79,7 +81,6 @@
 @media screen and (max-width: 1024px){
     .card_container{
         flex-direction: column;
-
     }
 
     .text_container{
