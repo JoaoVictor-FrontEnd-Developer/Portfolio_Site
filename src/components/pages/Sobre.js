@@ -10,8 +10,7 @@ function Sobre() {
             <div className={styles.container}>
                 <div className={styles.sobre}>
                     <h1>SOBRE</h1>
-                    <p>Cursando Engenharia de Software pela Unopar, dedico meus
-                        estudos a área de programação com cursos de desenvolvimento web,
+                    <p> Sou estudante na área de programação com cursos de desenvolvimento web,
                         focado em JavaScript e React. Buscando através de projetos pessoais,
                         melhorar minhas habilidades nessas tecnologias.</p>
                     <p>Sou flexível a novos desafios, para aprender novas linguagens e conquistar
