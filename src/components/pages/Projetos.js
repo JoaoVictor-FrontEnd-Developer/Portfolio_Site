@@ -7,14 +7,15 @@ import {
   FaChevronDown,
   FaChevronUp,
 } from "react-icons/fa";
+import {SiFirebase} from "react-icons/si"
 import styles from "./Projetos.module.css";
 import ProjectCard from "../layout/ProjectCard";
 
-import ToDoList from "../../img/ToDoList.png";
 import validationForm from "../../img/validationForm.png";
 import fylo from "../../img/fylo.png";
 import catalogoFilmes from "../../img/catalogo_filmes.png";
 import quiz from "../../img/quiz.png";
+import firebase_crud from "../../img/firebase-crud.png";
 
 import { useState } from "react";
 
@@ -32,24 +33,35 @@ function Projetos() {
 
         <div className={styles.projects}>
           <ProjectCard
-            img={ToDoList}
-            titulo="To-do-List React"
+            img={firebase_crud}
+            titulo="To do List e Autenticação"
             texto={
               <>
                 <p>
-                  Projeto desenvolvido durante estudos em React Js. Este projeto
-                  foi criado para prática de uma SPA que realizasse um CRUD em
-                  uma lista de tarefas. Dessa forma, é possível adicionar
-                  tarefas nas lista, marcar como concluída, editar o título da
-                  tarefa e excluir a tarefa. E com LocalStorage, os estados são
-                  salvas na memória.
+                E neste projeto estive praticando a utilização dos serviços Firebase, 
+                FIRESTORE para criação do banco de dados, e AUTHENTICATION para autenticação 
+                da aplicação com email e senha.
                 </p>
                 <br />
+                <p>
+                O sistema contém rotas protegidas, onde apenas por meio de login com email 
+                e senha o usuário pode ter acesso a página inicial com suas respectivas tarefas. 
+                Dessa forma, se um novo usuário entra no sistema, ele pode realizar seu cadastro 
+                preenchendo todos os campos corretamente, em seguida, ele deve verificar seu email 
+                para ter seu acesso liberado.
+                </p>
+                <br/>
+                <p>
+                Ao entrar em sua conta o usuário tem acesso às suas tarefas, podendo adicionar quantas desejar,
+                 marcar como concluída, excluir e editá-las. Por fim, é possível também sair da conta por meio 
+                 do botão na barra de navegação.
+                </p>
+                <br/>
               </>
             }
-            tecnologias={[<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaReact />]}
-            repositorio="https://github.com/JoaoVictor-FrontEnd-Developer/To-do-List-React.git"
-            site="https://to-do-list-react-amber.vercel.app/"
+            tecnologias={[<FaHtml5 />, <FaCss3Alt />, <FaJs />, <FaReact />, <SiFirebase/>, <FaBootstrap/>]}
+            repositorio="https://github.com/JoaoVictor-FrontEnd-Developer/Crud-and-Authentication-React-plus-Firebase.git"
+            site="https://crud-and-authentication-react-plus-firebase.vercel.app/"
           />
           <ProjectCard
             img={catalogoFilmes}
